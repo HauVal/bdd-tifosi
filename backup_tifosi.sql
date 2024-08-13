@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 12 août 2024 à 14:40
+-- Généré le : mar. 13 août 2024 à 17:46
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -17,9 +17,15 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+GRANT ALL PRIVILEGES ON *.* TO `tifosi`@`%` IDENTIFIED BY PASSWORD '*A067D685CD66028BE0FCA9620C057EB584D38045' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON `tifosi`.* TO `tifosi`@`%`;
+
 --
 -- Base de données : `tifosi`
 --
+CREATE DATABASE IF NOT EXISTS `tifosi` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `tifosi`;
 
 -- --------------------------------------------------------
 
